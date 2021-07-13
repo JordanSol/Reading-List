@@ -14,7 +14,7 @@
 
 .container {
   background-color: #2d3142;
-  height: 75vh;
+  height: 80vh;
   padding: 1em 4em;
   border-radius: 8px;
   border-bottom: 3px solid #ef8354;
@@ -49,6 +49,7 @@ hr {
 
 .book-form {
   margin-bottom: 2em;
+  width: 100%;
 }
 
 .input {
@@ -66,14 +67,49 @@ hr {
 button {
   background-color: #ef8354;
   color: whitesmoke;
-  padding: 0.5em;
+  padding: 0.5em 1em;
   border: 1px solid #ef8354;
   border-radius: 0px 5px 5px 0px;
+}
+
+button:hover {
+  background-color: #f08f65;
+  border: 1px solid #f08f65;
 }
 
 .empty {
   font-size: 1.5rem;
   color: #bfc0c0;
+}
+
+.book-list {
+  height: 60%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding: 1em;
+  background-color: #1d202b;
+  border-radius: 8px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.book-list::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #1d202b;
+}
+
+.book-list::-webkit-scrollbar {
+  width: 12px;
+  background-color: #1d202b;
+}
+
+.book-list::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #ef8354;
 }
 
 .book-details {
@@ -119,12 +155,13 @@ ul {
 }
 
 .title-text {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: bold;
 }
 
 .author-text {
   font-style: italic;
+  font-size: 0.8rem;
 }
 
 .instructions {

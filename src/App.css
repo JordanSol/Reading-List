@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
+
+.app {
+  font-family: montserrat;
+  color: whitesmoke;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  padding-top: 2em;
+  background-color: #4f5d75;
+}
+
+.container {
+  background-color: #2d3142;
+  height: 75vh;
+  padding: 1em 4em;
+  border-radius: 8px;
+  border-bottom: 3px solid #ef8354;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.navbar {
+  text-align: center;
+  line-height: 1.3rem;
+}
+
+.navbar h1 {
+  font-size: 3.5rem;
+  text-decoration: underline 6px solid #ef8354;
+}
+
+.navbar h1::before {
+  offset: top left 4px;
+  color: #ef8354;
+}
+
+.navbar p {
+  color: #d1d1d1;
+}
+
+hr {
+  border: 1px solid #bd6640;
+  margin-bottom: 2em;
+}
+
+.book-form {
+  margin-bottom: 2em;
+}
+
+.input {
+  background-color: #0c1821;
+  border: 1px solid #ef8354;
+  padding: 0.5em;
+  color: whitesmoke;
+  outline: none;
+}
+
+.input:focus {
+  border-color: #23a4c1;
+}
+
+button {
+  background-color: #ef8354;
+  color: whitesmoke;
+  padding: 0.5em;
+  border: 1px solid #ef8354;
+  border-radius: 0px 5px 5px 0px;
+}
+
+.empty {
+  font-size: 1.5rem;
+  color: #bfc0c0;
+}
+
+.book-details {
+  position: relative;
+  width: 95%;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  background: rgb(35, 164, 193);
+  background: linear-gradient(
+    144deg,
+    rgba(35, 164, 193, 1) 16%,
+    rgba(26, 127, 150, 1) 100%
+  );
+  color: whitesmoke;
+  padding: 1.3em 0.75em;
+  margin-bottom: 1em;
+  align-items: baseline;
+  transition: all 0.15s;
+}
+
+.book-details:hover {
+  background: rgb(39, 186, 218);
+  background: linear-gradient(
+    144deg,
+    rgba(39, 186, 218, 1) 16%,
+    rgba(31, 151, 179, 1) 100%
+  );
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 24px 0px,
+    rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+    rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+  transform: translateY(-2px);
+}
+
+.book-details:active {
+  transform: unset;
+  box-shadow: none;
+}
+
+ul {
+  padding: 0;
+}
+
+.title-text {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.author-text {
+  font-style: italic;
+}
+
+.instructions {
+  display: block;
+  align-self: baseline;
+  text-align: right;
+  color: #bfc0c0;
+  font-style: italic;
+  font-size: 0.8rem;
+}

@@ -6,7 +6,7 @@ const Navbar = () => {
     return (
         <div className="navbar">
             <h1>Reading List</h1>
-            <p>Currently you have {books.length} books to finish</p>
+            <p>Currently, you have {books.length} {books.length === 1 ? 'book' : 'books'} to finish.</p>
         </div>
     )
 }

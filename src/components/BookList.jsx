@@ -11,9 +11,10 @@ const BookList = () => {
                     <BookDetails book={book} key={book.id}/>
                 ))}
             </ul>
+            <span className="instructions">-Click a book when you finish it.</span>
         </div>
     ) : (
-        <div className="empty">No books to be found</div>
+        <div className="empty">No books to be found...</div>
     )
 }
 

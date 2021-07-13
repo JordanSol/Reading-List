@@ -15,10 +15,10 @@ const BookForm = () => {
     }
 
     return (
-        <form onSubmit={handleSubmit}>
-            <input type="text" placeholder="Book Title" className="title-input" value={title}
+        <form onSubmit={handleSubmit} className="book-form">
+            <input type="text" placeholder="Book Title" className="input title" value={title}
             onChange={e => setTitle(e.target.value)} required />
-            <input type="text" placeholder="Author" className="author-input" value={author}
+            <input type="text" placeholder="Author" className="input author" value={author}
             onChange={e => setAuthor(e.target.value)} required />
             <button>Add Book</button>
         </form>
